@@ -27,10 +27,18 @@ a {
   @apply rounded bg-lime-500 py-2 px-4 shadow outline-none hover:bg-lime-700  active:bg-lime-500;
 }
 
+Link {
+  @apply text-blue-600 hover:text-blue-800;
+}
+
 input,
 select,
 textarea {
   @apply rounded border p-2  outline-none ring-indigo-300  focus:ring;
+}
+
+.dropdown-link {
+  @apply flex p-2 hover:bg-gray-200;
 }
 
 @media (prefers-color-scheme: dark) {
