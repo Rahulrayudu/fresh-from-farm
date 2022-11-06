@@ -41,6 +41,10 @@ textarea {
   @apply flex p-2 hover:bg-gray-200;
 }
 
+.default-button {
+  @apply rounded bg-gray-100 py-2  px-4 text-black shadow outline-none hover:bg-gray-200  active:bg-gray-300;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
