@@ -86,7 +86,7 @@ function OrderScreen() {
               {isPaid ? (
                 <div className="alert-success">Paid at {paidAt}</div>
               ) : (
-                <div className="alert-error">Not paid</div>
+                <div className="alert-error">paid</div>
               )}
             </div>
 
@@ -122,7 +122,7 @@ function OrderScreen() {
                       <td className=" p-5 text-right">{item.quantity}</td>
                       <td className="p-5 text-right">${item.price}</td>
                       <td className="p-5 text-right">
-                        ${item.quantity * item.price}
+                        Rs. {item.quantity * item.price}
                       </td>
                     </tr>
                   ))}
@@ -137,25 +137,25 @@ function OrderScreen() {
                 <li>
                   <div className="mb-2 flex justify-between">
                     <div>Items</div>
-                    <div>${itemsPrice}</div>
+                    <div>Rs. {itemsPrice}</div>
                   </div>
                 </li>{' '}
                 <li>
                   <div className="mb-2 flex justify-between">
                     <div>Tax</div>
-                    <div>${taxPrice}</div>
+                    <div>Rs. {taxPrice}</div>
                   </div>
                 </li>
                 <li>
                   <div className="mb-2 flex justify-between">
                     <div>Shipping</div>
-                    <div>${shippingPrice}</div>
+                    <div>Rs. {shippingPrice}</div>
                   </div>
                 </li>
                 <li>
                   <div className="mb-2 flex justify-between">
                     <div>Total</div>
-                    <div>${totalPrice}</div>
+                    <div>Rs. {totalPrice}</div>
                   </div>
                 </li>
               </ul>

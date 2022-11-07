@@ -15,6 +15,9 @@ a {
   text-decoration: none;
 }
 
+nav {
+  color: green;
+}
 * {
   box-sizing: border-box;
 }

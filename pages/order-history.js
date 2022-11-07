@@ -60,7 +60,7 @@ function OrderHistoryScreen() {
                 <tr key={order._id} className="border-b">
                   <td className=" p-5 ">{order._id.substring(20, 24)}</td>
                   <td className=" p-5 ">{order.createdAt.substring(0, 10)}</td>
-                  <td className=" p-5 ">${order.totalPrice}</td>
+                  <td className=" p-5 ">Rs. {order.totalPrice}</td>
                   <td className=" p-5 ">
                     {order.isPaid
                       ? `${order.paidAt.substring(0, 10)}`
